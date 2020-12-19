@@ -1,0 +1,53 @@
+body {
+  background-color: gainsboro;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 25px;
+}
+.container {
+  margin: auto;
+  width: 40%;
+  padding: 15px;
+}
+
+.box-timer {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 0 0 5px black;
+}
+.timer {
+  margin-top: 20px;
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+#date-input {
+  font-family: inherit;
+  font-size: 25px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 5px black;
+  padding: 10px;
+  margin-right: 20px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  width: calc(25% - 10px);
+  margin-right: 10px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 5px black;
+}
+
+.value {
+  margin-right: 5px;
+}
