@@ -5,13 +5,9 @@ const { daysValue, hoursValue, minsValue, secsValue, calendar } = refs;
 let day = null;
 
 // делает даты до сегодняшней неаквтивными
-let minDate = `${
-  new Date().getFullYear() +
-  "-" +
-  (new Date().getMonth() + 1) +
-  "-" +
-  new Date().getDate()
-}`;
+let minDate = `${new Date().getFullYear()}-${
+  new Date().getMonth() + 1
+}-${new Date().getDate()}`;
 calendar.setAttribute("min", `${minDate}`);
 
 calendar.addEventListener("change", toStartTimer);
@@ -30,6 +26,7 @@ function myTimer(date) {
 // функция запуска таймера
 function toStartTimer() {
   day = new Date(calendar.value);
+  myTimer(day);
   setInterval(() => {
     myTimer(day);
   }, 1000);
